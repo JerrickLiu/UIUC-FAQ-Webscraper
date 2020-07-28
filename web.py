@@ -14,7 +14,7 @@ results = soup.find(id='post-23')
 
 questions = results.find_all('summary', class_="ab-accordion-title")
 
-num_questions = 30
+num_questions = len(questions)
 
 save_path = '/Users/SirJerrick/Desktop/webscraper/scraping_data/'
 
