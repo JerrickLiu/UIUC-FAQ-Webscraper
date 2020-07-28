@@ -4,6 +4,7 @@ import os
 import smtplib
 from email.mime.text import MIMEText
 
+
 url = "https://covid19.illinois.edu/frequently-asked-questions/"
 
 page = requests.get(url)
@@ -18,16 +19,22 @@ num_questions = len(questions)
 
 save_path = '/Users/SirJerrick/Desktop/webscraper/scraping_data/'
 
+if not os.path.isfile(save_path + "number_of_questions.txt"):
+    file = open(save_path + "number_of_questions.txt", "w")
+    file.write(str(num_questions))
+    file.close()
+    exit()
 
-file = open(save_path + "number_of_questions.txt", 'r')
+else:
+    file = open(save_path + "number_of_questions.txt", "r")
 
 if num_questions > int(file.read()):
 
-    new_file = open(save_path + "number_of_questions.txt", "w")
+    file = open(save_path + "number_of_questions.txt", "w")
 
-    new_file.write(str(num_questions))
+    file.write(str(num_questions))
 
-    new_file.close()
+    file.close()
 
     new_question = questions[-1].text
 
