@@ -17,3 +17,7 @@ pip install requests
 ## Example
 
 ![demo](demo/demo.png)
+
+## Usage
+
+You can use this code for your own university you'd just need to to substitude the URL with your college and change the name of the HTML elements you are trying to find on your college webpage. I have my own email on the code so you would need to change that as well if you are running this code.
