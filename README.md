@@ -1,0 +1,3 @@
+# Webscraper for UIUC FAQ
+
+Due to the rise of COVID-19 in the United States, the college that I'm attending, the University of Illinois at Urbana-Champaign (UIUC for short), has a posted a FAQ on their website for the arising number of questions and uncertainty in these times. I always want to stay updated on if there's any new info being added to the FAQ so I decided to build a webscraper using Python's BeautifulSoup library that scraps the questions on the website and checks if there is a new question. If there is a new question, the script emails me that there is a new question and in the body of the email tells me what the question is.  
