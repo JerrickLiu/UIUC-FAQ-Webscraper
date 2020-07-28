@@ -18,7 +18,6 @@ num_questions = len(questions)
 
 save_path = '/Users/SirJerrick/Desktop/webscraper/scraping_data/'
 
-s = "s"
 
 file = open(save_path + "number_of_questions.txt", 'r')
 
