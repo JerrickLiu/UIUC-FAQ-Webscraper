@@ -21,3 +21,7 @@ pip install requests
 ## Usage
 
 You can use this code for your own university you'd just need to to substitude the URL with your college and change the name of the HTML elements you are trying to find on your college webpage. I have my own email on the code so you would need to change that as well if you are running this code.
+
+## Automate this script!
+
+If you're on macOS like me, you can use the amazing scheduling tool crontab to automate your scripts for you! You can specify when to run them. For me, I run them daily to check if there are any new questions. Check out [chrontabguru](https://crontab.guru/) to help with the command line syntax!
